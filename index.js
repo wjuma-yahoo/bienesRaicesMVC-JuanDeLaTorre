@@ -1,18 +1,13 @@
 import express from 'express'
 
+import usuarioRouter from './routes/usuarioRoute.js'
+
 const app = express()
 
-app.get('/', function(req, res) {
-    res.json('Hola mundo desde express!')
-})
+app.set('view engine', 'pug')
+app.set('views', './views')
 
-app.get('/nosotros', function(req, res) {
-    res.json({
-        ok: true,
-        message: 'Sobre nosotros'
-    })
-})
-
+app.use('/', usuarioRouter)
 
 const port = 3000
 
