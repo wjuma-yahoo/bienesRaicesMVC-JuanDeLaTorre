@@ -1,0 +1,5 @@
+### Consultar la pagina principal
+GET http://localhost:3000
+
+### Consultar la pagina nosotros
+GET http://localhost:3000/nosotros
