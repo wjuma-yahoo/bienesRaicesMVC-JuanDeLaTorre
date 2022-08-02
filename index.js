@@ -9,7 +9,7 @@ app.set('views', './views')
 
 app.use( express.static('public') )
 
-app.use('/', usuarioRouter)
+app.use('/auth', usuarioRouter)
 
 const port = 3000
 
